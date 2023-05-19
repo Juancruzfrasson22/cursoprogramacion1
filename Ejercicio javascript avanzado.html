@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-widhth, initial-sacle=1.0" />
+	<title>"javaavanzado"</title>
+</head>
+
+<body>
+    <div class="recuadro">
+        <div class="interior rojo" onclick="cambiarFondo('red')"></div>
+        <div class="interior verde" onclick="cambiarFondo('green')"></div>
+        <div class="interior azul" onclick="cambiarFondo('blue')"></div>
+     </div>
+     <style>
+        .recuadro {
+            display: flex;
+        } 
+        .interior {
+            height: 100px;
+            width: 100px;
+            cursor: pointer;
+        }
+        .rojo {
+            background-color: red;
+        }
+        .azul {
+            background-color: blue;
+        }
+        .verde {
+            background-color: green;  
+        }
+     </style>
+     <script>
+        function cambiarFondo(color) {
+            document.querySelector('body').style.background=color;
+        }
+     </script>
+     </body>
+</html>
